@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Project - Puzzle 3</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Autour+One|Luckiest+Guy|Shadows+Into+Light" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+    <link href="smartmenus/sm-core-css.css" rel="stylesheet">
+    <link href="smartmenus/sm-simple.css" rel="stylesheet">
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="smartmenus/jquery.smartmenus.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link href="css/puzzle-styles.css" rel="stylesheet">
+    <script type="text/javascript">
+	$(function() {
+		$('#main-menu').smartmenus({
+			mainMenuSubOffsetX: -1,
+			subMenusSubOffsetX: 10,
+			subMenusSubOffsetY: 0
+		});
+	});
+</script>
+
+</head>
+    
+    <div class="header">
+		<h1>Complete The Puzzle</h1>
+		<p>Drag the images on the box to complete the image.</p>
+	</div>
+    <nav id="main-nav">
+        <ul id="main-menu" class="sm sm-simple">
+            <li><a href="index.html">Home</a></li>
+                <li><a href="puzzle-1.html">Puzzle 1</a></li>
+                <li><a href="puzzle-2.html">Puzzle 2</a></li>
+                <li><a href="puzzle-3.html">Puzzle 3</a></li>
+        </ul>
+    </nav>
+<body>
+	
+    <div class="outer">
+         <div class="droppable box">
+                <div class="slot droppable pic1"><p id="droptext">Drop here!</p></div>
+                <div class="slot droppable pic2"></div>
+                <div class="slot droppable pic3"></div>
+                <div class="slot droppable pic4"></div>
+                <div class="slot droppable pic5"></div>
+                <div class="slot droppable pic6"></div>
+                <div class="slot droppable pic7"></div>
+                <div class="slot droppable pic8"></div>
+                <div class="slot droppable pic9"></div>
+                <div class="slot droppable pic10"></div>
+                <div class="slot droppable pic11"></div>
+                <div class="slot droppable pic12"></div>
+            
+        </div>
+        <div class="container">
+            <div id="photos">
+                <div class="draggable pic4"><img src="images/3/4.png" class="has-hover"></div>
+                <div class="draggable pic7"><img src="images/3/7.png" class="has-hover"></div>
+                <div class="draggable pic12"><img src="images/3/12.png" class="has-hovers"></div>
+                <div class="draggable pic8"><img src="images/3/8.png" class="has-hover"></div>
+                <div class="draggable pic6"><img src="images/3/6.png" class="has-hover"></div>
+                <div class="draggable pic2"><img src="images/3/2.png" class="has-hover"></div>
+                <div class="draggable pic9"><img src="images/3/9.png" class="has-hover"></div>
+                <div class="draggable pic3"><img src="images/3/3.png" class="has-hover"></div>
+                <div class="draggable pic11"><img src="images/3/11.png" class="has-hover"></div>
+                <div class="draggable pic1"><img src="images/3/1.png" class="has-hover"></div>
+                <div class="draggable pic10"><img src="images/3/10.png" class="has-hover"></div>
+                <div class="draggable pic5"><img src="images/3/5.png" class="has-hover"></div>
+                
+                
+            </div>
+        </div>
+        <center> <button type="button" class="hint hint3">Hint?</button> </center>
+    </div>
+    <div id="hello" title="">
+        <h1>Congratulations!</h1>
+                <p>You completed the puzzle!</p>
+                <p>You completed all the puzzles!</p>
+                <button><a href="index.html">Home</a></button>
+    </div>
+</body>
+    <footer>
+        <p>Created by Heather, Aeron, Brittany</p>
+     </footer>
+</html>
