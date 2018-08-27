@@ -7,6 +7,11 @@
 
     #slides {
       display: none;
+      text-align: center;
+      margin-top: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200px;
     }
 
     #slides .slidesjs-navigation {
@@ -73,12 +78,39 @@
     }
 
     .container {
-      margin: 0 auto
+      margin: 0 auto;
+      max-width: 1200px;
     }
 
     
-    @media {
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
       .container {
-        width: 80%;
+        width: auto;
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto;
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px;
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1000px;
       }
     }
